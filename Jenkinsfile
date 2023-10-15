@@ -1,8 +1,11 @@
-pipeline {
+@Library('my-shared-Library@main')_
     agent any 
     stages {
         stage('Lint Checks') {
             steps {
+                script{
+                    sample.info()
+                }
                 sh "echo Installing JSlist"
                 sh "npm i jslint"
                 sh "echo starting link checks......"
