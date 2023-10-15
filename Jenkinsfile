@@ -1,4 +1,4 @@
-@Library('my-shared-Library@main')_
+@Library('roboshop-shared-Library@main')_
     agent any 
     stages {
         stage('Lint Checks') {
